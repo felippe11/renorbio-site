@@ -1,0 +1,123 @@
+@keyframes placeHolderShimmer {
+  0% { background-position: -468px 0 }
+  100% { background-position: 468px 0 }
+}
+
+// Efeito de Loading para Loading Template
+.loading-effect {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: auto;
+  position: relative;
+}
+
+.titulo.loading-effect {
+  display: block;
+  height: 30px;
+  width: auto;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.descricao.loading-effect {
+  display: block;
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.descricao-lista.loading-effect {
+  display: grid;
+  height: 10px;
+  width: auto;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.infos-loading {
+  display: flex;
+
+  .infos {
+    height: 15px;
+    width: 15%;
+    border-radius: 5px;
+    margin: 5px 0;
+    margin-right: 15px;
+  }
+
+}
+
+.content-loading {
+  .imagem.loading-effect {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 15px 0;
+    margin-right: 15px;
+    float: left;
+  }
+
+  .imagem-index.loading-effect {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 15px 0;
+    margin-right: 15px;
+    float: left;
+  }
+
+  .subtitulo.loading-effect {
+    display: grid;
+    height: 20px;
+    width: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+
+  .descricao.loading-effect {
+    display: grid;
+  }
+
+  .datas.loading-effect {
+    display: grid;
+    height: 10px;
+    width: 10%;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+
+  .galeria.loading-effect {
+    width: 215px;
+    height: 140px;
+    border-radius: 5px;
+    margin: 15px 0;
+    margin-right: 15px;
+    float: left;
+  }
+
+  .documentos.loading-effect {
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+
+  .linha.loading-effect {
+    height: 10px;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .linha-pequena.loading-effect {
+    height: 10px;
+    width: 30%;
+    margin: 15px 0;
+  }
+}
