@@ -6,7 +6,7 @@ function resolve (dir) {
 
 module.exports = {
   lintOnSave: false,
-  publicPath: process.env.PUBLIC_PATH,
+  publicPath: './',
   productionSourceMap: false,
   configureWebpack: {
     resolve: {
