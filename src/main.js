@@ -10,7 +10,7 @@ import VueLodash from "vue-lodash";
 import VueLazyLoad from "vue-lazyload";
 import VueTouch from "vue-touch";
 import App from "./App";
-import router from "./scripts/router";
+import router from "./router";
 
 Vue.use(VModal);
 

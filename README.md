@@ -3,6 +3,50 @@
 > Este projeto contém uma estrutura básica para a contrução dos sites institucionais.
 > Possui suporte ao controle de dependências de bibliotecas de terceiros através do [npm](http://npmjs.com/).
 
+## Instruções para Hospedagem nos Servidores da UFAL (PHP 8.2 + MySQL 8.0)
+
+### Problema Identificado
+
+Ao tentar hospedar o site nos servidores da UFAL, o link gerado para acessar a página inicial (https://sites.ufal.br/a0fba4eb17/) estava retornando "página não encontrada".
+
+### Soluções Implementadas
+
+Foram realizadas as seguintes correções no projeto:
+
+1. **Correção da tag base no arquivo index.html**:
+   - A tag `<base href="/">` foi alterada para `<base href="/a0fba4eb17/">` para corresponder ao caminho base configurado no Vue.js.
+
+2. **Criação de arquivo .htaccess na pasta public**:
+   - Foi criado um arquivo .htaccess na pasta public com as regras de redirecionamento necessárias para aplicações SPA (Single Page Application).
+
+3. **Correção do arquivo index.php**:
+   - O arquivo index.php foi atualizado para incluir corretamente o arquivo index.html da pasta public.
+
+4. **Criação de arquivo index.html na raiz**:
+   - Foi criado um arquivo index.html na raiz do projeto para redirecionar para o caminho correto.
+
+### Instruções para Hospedagem
+
+1. Execute o comando de build para gerar os arquivos otimizados:
+   ```
+   npm run build
+   ```
+
+2. Isso criará uma pasta `dist` com todos os arquivos necessários para a hospedagem.
+
+3. Copie **todos** os arquivos da pasta `dist` para a pasta `public` do hosting da UFAL.
+
+4. Certifique-se de copiar também os seguintes arquivos para a raiz do hosting:
+   - `.htaccess` (da raiz do projeto)
+   - `index.php` (da raiz do projeto)
+   - `index.html` (da raiz do projeto)
+
+5. Verifique se todos os arquivos têm as permissões corretas no servidor:
+   - Arquivos: 644 (rw-r--r--)
+   - Pastas: 755 (rwxr-xr-x)
+
+6. Se o site ainda não estiver acessível, tente limpar o cache do navegador ou acessar em uma janela anônima.
+
 ---
 
 ## Estrutura do Projeto

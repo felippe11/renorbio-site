@@ -127,7 +127,7 @@ const routes = [
 console.log(`ENV: ${process.env}`);
 
 export default new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
+  mode: "hash",
+  base: "/a0fba4eb17/",
   routes
 });
