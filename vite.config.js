@@ -1,4 +1,4 @@
 export default {
-  base: '/a0fba4eb17/',
+  base: '/',
   // outras configurações
 }

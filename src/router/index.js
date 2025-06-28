@@ -30,7 +30,7 @@ Vue.use(Router)
 
 const router = new Router({
   mode: 'hash',
-  base: '/a0fba4eb17/',
+  base: '/',
   routes: [
     { path: "/", name: "Index", component: Index },
     { path: "*", name: "*", component: Index },

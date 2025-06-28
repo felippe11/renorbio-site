@@ -7,14 +7,14 @@
 
 ### Problema Identificado
 
-Ao tentar hospedar o site nos servidores da UFAL, o link gerado para acessar a página inicial (https://sites.ufal.br/a0fba4eb17/) estava retornando "página não encontrada".
+Ao tentar hospedar o site nos servidores da UFAL, o link gerado para acessar a página inicial (https://sites.ufal.br/) estava retornando "página não encontrada".
 
 ### Soluções Implementadas
 
 Foram realizadas as seguintes correções no projeto:
 
 1. **Correção da tag base no arquivo index.html**:
-   - A tag `<base href="/">` foi alterada para `<base href="/a0fba4eb17/">` para corresponder ao caminho base configurado no Vue.js.
+   - A tag `<base href="/">` foi alterada para `<base href="/">` para corresponder ao caminho base configurado no Vue.js.
 
 2. **Criação de arquivo .htaccess na pasta public**:
    - Foi criado um arquivo .htaccess na pasta public com as regras de redirecionamento necessárias para aplicações SPA (Single Page Application).

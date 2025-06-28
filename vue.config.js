@@ -5,7 +5,7 @@ function resolve (dir) {
 }
 
 module.exports = {
-  publicPath: '/a0fba4eb17/',
+  publicPath: '/',
   productionSourceMap: false,
   configureWebpack: {
     resolve: {

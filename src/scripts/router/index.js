@@ -128,6 +128,6 @@ console.log(`ENV: ${process.env}`);
 
 export default new Router({
   mode: "hash",
-  base: "/a0fba4eb17/",
+  base: "/",
   routes
 });
