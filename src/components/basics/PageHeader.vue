@@ -152,7 +152,7 @@
   }
 
   #header{
-    background: rgba(36, 40, 82, 0.8); //$cor-azul-1 80%;
+    background: rgba(36, 40, 82, 0.517); //$cor-azul-1 80%;
     display: flex;
     flex-flow: column;
 
