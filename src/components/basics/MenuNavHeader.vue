@@ -36,7 +36,9 @@
       li
         router-link.link(:to="{ name: 'PaginaExtra', params: { slug: 'empresas'} }" :tabindex="tab+7") Empresas
       li
-        router-link(:to="{ name: 'Contato', params: {} }" :tabindex="tab+8").link Contato
+        router-link.link(:to="{ name: 'VitrineTecnologica' }" :tabindex="tab+8") Vitrine Tecnológica
+      li
+        router-link(:to="{ name: 'Contato', params: {} }" :tabindex="tab+9").link Contato
 </template>
 
 <script>

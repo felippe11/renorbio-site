@@ -25,6 +25,7 @@ import MapaDoSite from "@/components/pages/MapaDoSite"
 import Galeria from "@/components/pages/Galeria"
 import Album from "@/components/pages/Album"
 import Busca from "@/components/pages/Busca"
+import VitrineTecnologica from "@/components/pages/VitrineTecnologica"
 
 Vue.use(Router)
 
@@ -148,6 +149,11 @@ const router = new Router({
       path: "/busca",
       name: "Busca",
       component: Busca,
+    },
+    {
+      path: "/vitrine-tecnologica",
+      name: "VitrineTecnologica",
+      component: VitrineTecnologica,
     }
   ]
 })
