@@ -29,7 +29,7 @@ import Busca from "@/components/pages/Busca"
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'hash',
+  mode: 'history',
   base: '/',
   routes: [
     { path: "/", name: "Index", component: Index },
