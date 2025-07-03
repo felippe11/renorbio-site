@@ -29,7 +29,7 @@ import Busca from "@/components/pages/Busca"
 Vue.use(Router)
 
 const router = new Router({
-  mode: 'history',
+  mode: 'hash', // MUDANÇA PRINCIPAL: usa hash mode para evitar erro 404 no servidor
   base: '/',
   routes: [
     { path: "/", name: "Index", component: Index },
@@ -153,7 +153,7 @@ const router = new Router({
       component: Busca,
     },
 
-    // Rota curinga para capturar rotas não definidas e redirecionar para a página inicial
+    // Rota coringa para rotas não definidas (opcional)
     {
       path: '*',
       redirect: '/'
