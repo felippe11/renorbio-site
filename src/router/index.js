@@ -33,12 +33,15 @@ const router = new Router({
   base: '/',
   routes: [
     { path: "/", name: "Index", component: Index },
-    { path: "*", name: "*", component: Index },
+
     {
       path: '/academico',
       name: 'academico',
-      redirect: 'https://academico.renorbio.org'
+      beforeEnter() {
+        window.location.href = 'https://academico.renorbio.org';
+      }
     },
+
     {
       path: "/disciplinas/disciplinas-do-programa",
       name: "DisciplinasDoPrograma",
@@ -148,6 +151,12 @@ const router = new Router({
       path: "/busca",
       name: "Busca",
       component: Busca,
+    },
+
+    // Rota curinga para capturar rotas não definidas e redirecionar para a página inicial
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })
